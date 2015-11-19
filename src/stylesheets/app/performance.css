@@ -1,0 +1,52 @@
+.app-performance {
+  margin-bottom: 2em;
+
+  &-bubble {
+    display: inline-block;
+    position: relative;
+    width: 8em;
+    height: 8em;
+    left: 50%;
+    transform: translateX(-133%);
+    border-radius: 50%;
+    line-height: 8em;
+    margin-bottom: 2em;
+
+    &:before {
+      position: absolute;
+      margin-top: 5em;
+      width: 8em;
+      text-align: center;
+    }
+
+    &-value {
+      display: block;
+      color: var(--corporate-color-white);
+      text-align: center;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 4em;
+
+      &:after {
+        content: 'ms';
+        font-size: .3em;
+        opacity: .8;
+      }
+    }
+  }
+
+  &-load {
+    background-color: var(--corporate-color-purple);
+    margin-right: 4em;
+    &:before {
+      content: 'Page Load';
+    }
+  }
+
+  &-dom {
+    background-color: var(--corporate-color-green);
+
+    &:before {
+      content: 'DOM Interactive';
+    }
+  }
+}

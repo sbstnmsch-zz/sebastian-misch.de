@@ -1,10 +1,10 @@
-(() => {
-  let
-    hours = (new Date()).getHours(),
-    night = !(8 < hours === hours < 18);
+import NightWatch from './util/night-watch';
+import PerformanceVisualizer from './util/performance-visualizer';
 
-  if (night) {
-    window.document.body.classList.add('u-night');
-  }
+((window) => {
+  /* Enable features */
+
+  new NightWatch(window);
+  new PerformanceVisualizer(window);
 
 })();
