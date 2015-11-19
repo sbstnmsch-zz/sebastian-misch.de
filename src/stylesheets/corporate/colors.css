@@ -9,6 +9,15 @@
   --corporate-color-yellow: #FC0;
 }
 
+.u-corporate-color-white { color: #DDD; }
+.u-corporate-color-purple { color: #C00083; }
+.u-corporate-color-red { color: #F36; }
+.u-corporate-color-orange { color: #D63; }
+.u-corporate-color-blue { color: #06F; }
+.u-corporate-color-cyan { color: #0CF; }
+.u-corporate-color-green { color: #6B4; }
+.u-corporate-color-yellow { color: #FC0; }
+
 .u-corporate-text { color: #333; }
 .u-corporate-background { background-color: #FFF; }
 

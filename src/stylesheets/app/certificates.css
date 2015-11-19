@@ -7,9 +7,20 @@
     list-style-type: none;
 
     &-item {
-      margin-bottom: 1em;
+      display: inline-block;
+      margin-bottom: .5em;
       line-height: 1.5;
       font-size: 1.2em;
+
+      &:after {
+        content: ',';
+        margin-right: .5em;
+      }
+
+      &:last-child:after {
+        content: ' …Check!';
+        color: var(--corporate-color-yellow);
+      }
     }
   }
 }
