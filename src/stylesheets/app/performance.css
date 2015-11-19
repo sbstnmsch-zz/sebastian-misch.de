@@ -46,7 +46,7 @@
     background-color: var(--corporate-color-green);
 
     &:before {
-      content: 'DOM Interactive';
+      content: 'Interactive';
     }
   }
 }
