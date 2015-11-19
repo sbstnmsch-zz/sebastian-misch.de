@@ -1,0 +1,61 @@
+.app-vitae {
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &-item {
+      margin-bottom: 1em;
+      line-height: 1.5;
+      font-size: 1.2em;
+
+      &-from {
+        position: absolute;
+      }
+
+      &-to {
+        &:before {
+          content: '—';
+          opacity: .8;
+        }
+        opacity: .4;
+        position: absolute;
+        padding-left: 2em;
+      }
+
+      &-title {
+        display: block;
+        padding-left: 6em;
+        font-weight: 600;
+        transition: padding .4s ;
+      }
+
+      &-company {
+        display: block;
+        color: var(--corporate-color-purple);
+        padding-left: 6em;
+        transition: padding .4s .2s ;
+      }
+
+      &-description {
+        display: block;
+        padding-left: 6em;
+        transition: padding .4s .4s ;
+      }
+    }
+  }
+}
+
+
+@media (--small-viewport) {
+  .app-vitae-list-item-title {
+    padding-left: 0;
+    padding-top: 1.5em;
+  }
+
+  .app-vitae-list-item-company,
+  .app-vitae-list-item-description {
+    padding-left: 0;
+  }
+}
