@@ -38,7 +38,7 @@
 
       & .app-connect-list-item--slack:before {
         background-image: svg("ei#comment");
-        background-color: var(--corporate-color-yellow);
+        background-color: var(--corporate-color-red);
       }
     }
   }
