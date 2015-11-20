@@ -1,0 +1,13 @@
+.app-footer {
+  padding-top: 2em;
+
+  & a {
+    color: var(--corporate-color-blue);
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
