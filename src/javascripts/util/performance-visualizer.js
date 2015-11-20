@@ -8,7 +8,7 @@ class PerformanceVisualizer {
         domEl = _window.document.querySelector('.app-performance-dom .app-performance-bubble-value');
 
       if (loadEl) {
-        loadEl.innerText = t.loadEventEnd - t.responseEnd;
+        loadEl.innerText = t.responseStart - t.responseEnd;
       }
 
       if (domEl) {
