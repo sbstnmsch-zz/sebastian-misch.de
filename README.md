@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/sbstnmsch/sebastian-misch.de.svg?branch=master)](https://travis-ci.org/sbstnmsch/sebastian-misch.de)
 
 # My personal website
-Feel free to use for your own.
+live at http://sebastian-misch.de - feel free to use for your own.
 
 ```
 $ npm install
