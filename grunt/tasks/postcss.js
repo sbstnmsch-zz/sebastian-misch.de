@@ -53,5 +53,15 @@ module.exports = {
       '<%= paths.dist.stylesheets %>/app.min.css':
         '<%= paths.src.stylesheets %>/app.css'
     }
+  },
+  media: {
+    options: {
+      map: false,
+      processors: _processors
+    },
+    files: {
+      '<%= paths.dist.stylesheets %>/media.min.css':
+        '<%= paths.src.stylesheets %>/media.css'
+    }
   }
 };

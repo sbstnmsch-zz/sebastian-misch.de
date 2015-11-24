@@ -10,7 +10,7 @@ window.onload = () => {
     (window.document.getElementsByTagName('head')[0]).appendChild(sct);
   });
 
-  ['app.min.css'].forEach((style) => {
+  ['app.min.css', 'media.min.css'].forEach((style) => {
     let sct = window.document.createElement('link');
     sct.rel = 'stylesheet';
     sct.async = true;

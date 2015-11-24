@@ -1,0 +1,14 @@
+.app-vitae-list-item-media--adesso-0 {
+  background-image: inline('images/adesso.png');
+}
+
+.app-vitae-list-item-media--adesso-1 {
+  background-image: inline('images/bitmarck.png');
+  transition-delay: .2s;
+}
+
+.app-vitae-list-item--preview {
+  & .app-vitae-list-item-media--adesso-1 {
+    left: 16em;
+  }
+}

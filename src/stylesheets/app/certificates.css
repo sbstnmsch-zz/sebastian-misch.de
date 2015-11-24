@@ -18,7 +18,7 @@
       }
 
       &:last-child:after {
-        content: ' …Check!';
+        content: ' … Check!';
         color: var(--corporate-color-yellow);
       }
     }

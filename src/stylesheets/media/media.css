@@ -1,0 +1,46 @@
+.app-vitae-list-item-media {
+  position: absolute;
+  z-index: 10;
+  left: 1em;
+  margin-top: 3em;
+  width: 3em;
+  height: 4em;
+  box-sizing: border-box;
+  border: solid #eee 1px;
+  transition: left, width, height;
+  transition-duration: .1s;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  cursor: pointer;
+  opacity: .8;
+}
+.u-night {
+  & .app-vitae-list-item-media {
+    border: solid #666 1px;
+  }
+}
+.app-vitae-list-item--preview {
+  .app-vitae-list-item-media {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      left: 1em;
+      top: -.5em;
+      background-color: rgba(255, 255, 255, .5);
+      clip-path: polygon(0 .5em, 0.5em 0em, 1em .5em);
+    }
+    left: 6em;
+    width: 9em;
+    height: 12em;
+    box-shadow: 0 0 2em black;
+    opacity: .98;
+  }
+}
+
+@media (--small-viewport) {
+  .app-vitae-list-item-media {
+    display: none;
+  }
+}

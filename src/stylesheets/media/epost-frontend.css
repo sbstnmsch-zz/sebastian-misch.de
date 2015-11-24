@@ -1,0 +1,14 @@
+.app-vitae-list-item-media--epost-frontend-0 {
+  background-image: inline('images/epost-frontend-lst.png');
+}
+
+.app-vitae-list-item-media--epost-frontend-1 {
+  background-image: inline('images/epost-frontend-mad.png');
+  transition-delay: .2s;
+}
+
+.app-vitae-list-item--preview {
+  & .app-vitae-list-item-media--epost-frontend-1 {
+    left: 16em;
+  }
+}
