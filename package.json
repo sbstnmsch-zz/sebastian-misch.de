@@ -47,7 +47,8 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack --config src/config/webpack.config.js --progress --colors",
     "postinstall": "./node_modules/.bin/grunt",
-    "test": "./node_modules/.bin/babel-tape-runner \"src/javascripts/**/*.spec.js\" | faucet"
+    "test": "./node_modules/.bin/babel-tape-runner \"src/javascripts/**/*.spec.js\" | faucet",
+    "start": "./node_modules/.bin/grunt watch"
   },
   "author": "Sebastian Misch <sbstnmsch AT gmail> (http://sebastian-misch.de/)",
   "license": "MIT"
