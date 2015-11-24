@@ -11,6 +11,9 @@ module.exports = {
       }
     ],
     options: {
+      data: {
+        cdn: process.env.CDN || ''
+      },
       includeBase: '<%= paths.dist.default %>',
       process: true
     }
