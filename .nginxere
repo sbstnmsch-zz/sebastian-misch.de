@@ -19,7 +19,7 @@ http {
   index index.html;
 
   server{
-    listen 8000;
+    listen 3000;
 
     root {{=pwd}}/dist;
     index index.html;
