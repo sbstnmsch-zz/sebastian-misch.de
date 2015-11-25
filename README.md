@@ -10,6 +10,16 @@ $ nginxere # available at https://github.com/sbstnmsch/nginxere
 ```
 
 ## Development
+To watch your sources and rebuild automatically type:
 ```
-$ grunt watch
+$ npm start
 ```
+Open http://localhost:3000 with your favorite browser.
+
+## Production builds and CDNs
+If you love to use a CDN for your assets just configure one and build site with:
+```
+$ CDN=http://mycdnzone.cdnprovider.com grunt
+```
+All JS and CSS will be served by CDN.
+That's all to it.
