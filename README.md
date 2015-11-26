@@ -21,5 +21,5 @@ If you love to use a CDN for your assets just configure one and build site with:
 ```
 $ CDN=http://mycdnzone.cdnprovider.com grunt
 ```
-All JS and CSS will be served by CDN.
+All javascripts and stylesheets will be served by your chosen CDN.
 That's all to it.
