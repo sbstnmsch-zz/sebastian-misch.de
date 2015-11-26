@@ -11,6 +11,7 @@ http {
     application/javascript js;
     text/css css;
     image/svg+xml svg;
+    image/x-icon ico;
   }
 
   access_log /dev/stdout;
