@@ -8,11 +8,13 @@ class PerformanceVisualizer {
         domEl = _window.document.querySelector('.app-performance-dom .app-performance-bubble-value');
 
       if (loadEl) {
-        loadEl.innerText = t.responseEnd - t.responseStart;
+        let delta = t.responseEnd - t.responseStart;
+        loadEl.innerText = delta > 0 ? delta : 0;
       }
 
       if (domEl) {
-        domEl.innerText = t.domInteractive - t.domLoading;
+        let delta = t.domInteractive - t.domLoading;
+        domEl.innerText = delta > 0 ? delta : 0;
       }
     }
   }
