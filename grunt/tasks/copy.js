@@ -12,6 +12,10 @@ module.exports = {
         src: '**/*',
         dest: '<%= paths.dist.images %>',
         expand: true
+      },
+      {
+        src: '<%= paths.src.config %>/robots.txt',
+        dest: '<%= paths.dist.default %>/robots.txt',
       }
     ]
   }
