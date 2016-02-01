@@ -28,7 +28,7 @@
     "grunt-shell": "1.1.2",
     "jit-grunt": "0.9.1",
     "load-grunt-config": "0.19.1",
-    "postcss-assets": "3.0.3",
+    "postcss-assets": "4.0.1",
     "postcss-cssnext": "2.4.0",
     "postcss-custom-media": "5.0.0",
     "postcss-custom-properties": "5.0.0",
