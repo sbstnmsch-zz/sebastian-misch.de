@@ -26,7 +26,7 @@
     "grunt-html": "8.0.0",
     "grunt-manifest": "0.4.4",
     "grunt-postcss": "0.8.0",
-    "grunt-processhtml": "0.3.11",
+    "grunt-processhtml": "0.4.0",
     "grunt-shell": "1.2.1",
     "grunt-ssh": "^0.12.9",
     "jit-grunt": "0.9.1",
