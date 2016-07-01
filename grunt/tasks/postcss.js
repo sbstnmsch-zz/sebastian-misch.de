@@ -1,5 +1,4 @@
 var
-    _postcssCssNextProcessor = require('postcss-cssnext')(),
     _postcssCustomPropertiesProcessor = require('postcss-custom-properties')(),
     _postcssCustomMediaProcessor = require('postcss-custom-media')(),
     _postcssImportProcessor = require('postcss-import')(),
@@ -30,7 +29,6 @@ var
       _postcssSvgProcessor,
       _postcssSvgoProcessor,
       _postcssAssetsProcessor,
-      _postcssCssNextProcessor,
       _autoprefixerProcessor,
       _cssNanoProcessor
     ];
