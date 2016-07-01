@@ -1,5 +1,5 @@
 module.exports = {
   app: {
-    src: "<%= paths.dist.templates %>/**/*.html"
+    src: '<%= paths.dist.templates %>/**/*.html'
   }
 };

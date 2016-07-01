@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         src: '<%= paths.src.config %>/robots.txt',
-        dest: '<%= paths.dist.default %>/robots.txt',
+        dest: '<%= paths.dist.default %>/robots.txt'
       }
     ]
   }

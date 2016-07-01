@@ -1,9 +1,8 @@
 window.onload = () => {
-
   /* Lazy load app */
 
   ['app.min.js'].forEach((script) => {
-    let sct = window.document.createElement('script');
+    const sct = window.document.createElement('script');
     sct.type = 'text/javascript';
     sct.async = true;
     sct.src = `${window.cdn || ''}/assets/javascripts/${script}`;
@@ -11,7 +10,7 @@ window.onload = () => {
   });
 
   ['app.min.css', 'media.min.css'].forEach((style) => {
-    let sct = window.document.createElement('link');
+    const sct = window.document.createElement('link');
     sct.rel = 'stylesheet';
     sct.async = true;
     sct.href = `${window.cdn || ''}/assets/stylesheets/${style}`;

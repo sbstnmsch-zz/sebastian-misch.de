@@ -1,12 +1,11 @@
-import NightWatch from './util/night-watch';
-import PerformanceVisualizer from './util/performance-visualizer';
-import MediaPreview from './util/media-preview';
+import nightWatch from './util/night-watch';
+import performanceVisualizer from './util/performance-visualizer';
+import mediaPreview from './util/media-preview';
 
 (() => {
   /* Enable features */
 
-  new NightWatch(window);
-  new PerformanceVisualizer(window);
-  new MediaPreview(window);
-
+  nightWatch(window);
+  performanceVisualizer(window);
+  mediaPreview(window);
 })();

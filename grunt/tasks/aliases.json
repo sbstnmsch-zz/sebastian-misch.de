@@ -12,6 +12,7 @@
 
     "processhtml",
     "htmlmin",
+    "htmllint",
 
     "copy",
 
