@@ -13,7 +13,7 @@ const
 
       /* eslint-disable no-loop-func */
       el.onclick = (c) => {
-        window.requestAnimationFrame(() => {
+        _window.requestAnimationFrame(() => {
           for (i = 0; i < itemEl.length; ++i) {
             el = itemEl[i];
 
