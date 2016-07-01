@@ -5,4 +5,5 @@
   margin-right: .5em;
   vertical-align: middle;
   background-image: url("https://api.travis-ci.org/sbstnmsch/sebastian-misch.de.svg?branch=master");
+  background-repeat: no-repeat;
 }
