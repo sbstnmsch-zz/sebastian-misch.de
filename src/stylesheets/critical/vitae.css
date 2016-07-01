@@ -27,7 +27,6 @@
       &-title {
         display: block;
         padding-left: 6em;
-        font-weight: 600;
         transition: padding .4s ;
       }
 

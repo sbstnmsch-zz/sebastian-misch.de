@@ -8,22 +8,52 @@
 
   &-header {
     margin-bottom: 8em;
+    padding-left: 6.6em;
+    background-image: url(https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAdFAAAAJGVmYWU3YTgyLWM1ODgtNGRkZS05MjQ4LWQyMzc2MmQ3N2JjZA.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left bottom;
+    white-space: nowrap;
+    transition: padding .4s, background-size .4s ;
 
     &-title {
-      margin-bottom: .2em;
-      line-height: 1;
-      font-size: 4em;
-      font-family: CorporateHeader, sans-serif;
+      display: block;
+      font-size: 1.563em;
+      letter-spacing: 0.188em;
+      text-transform: uppercase;
       font-weight: 300;
-      letter-spacing: -.02rem;
     }
 
     &-subtitle {
-      margin-top: 0em;
-      font-size: 1.4em;
-      font-family: Georgia;
-      font-weight: 300;
-      letter-spacing: -.02rem;
+      display: block;
+      line-height: 1.3em;
+      font-size: 1em;
+      font-weight: 700;
+      transition: padding .4s .4s;
     }
+  }
+}
+
+@media (--medium-viewport) {
+  .app-header {
+    padding-left: 0;
+    background-size: auto 50%;
+  }
+  .app-header-subtitle {
+    padding-left: 4em;
+  }
+
+  .app-vitae-list-item-company,
+  .app-vitae-list-item-description {
+    padding-left: 0;
+  }
+}
+@media (--small-viewport) {
+  .app-header {
+    white-space: normal;
+  }
+
+  .app-header-subtitle {
+    padding-left: 5em;
   }
 }
