@@ -22,12 +22,12 @@ const
   }),
   _cssNanoProcessor = require('cssnano')(),
   _processors = [
-    _postcssCustomMediaProcessor,
     _postcssImportProcessor,
     _postcssNestedProcessor,
     _postcssSvgProcessor,
     _postcssSvgoProcessor,
     _postcssAssetsProcessor,
+    _postcssCustomMediaProcessor,
     _postcssCustomPropertiesProcessor,
     _autoprefixerProcessor,
     _cssNanoProcessor
