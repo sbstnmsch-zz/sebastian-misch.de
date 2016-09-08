@@ -14,7 +14,7 @@
     "babel-tape-runner": "2.0.0",
     "cssnano": "3.7.3",
     "eslint": "3.0.0",
-    "eslint-config-airbnb": "6.1.0",
+    "eslint-config-airbnb": "11.0.0",
     "eslint-loader": "1.4.0",
     "eslint-plugin-import": "1.10.0",
     "eslint-plugin-jsx-a11y": "1.5.3",
