@@ -41,7 +41,7 @@
     "postcss-import": "8.1.2",
     "postcss-nested": "1.0.0",
     "postcss-svg": "1.0.6",
-    "postcss-svgo": "2.1.4",
+    "postcss-svgo": "2.1.5",
     "tape": "4.6.0",
     "time-grunt": "1.4.0",
     "webpack": "1.13.1",
