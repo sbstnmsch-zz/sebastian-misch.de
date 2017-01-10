@@ -38,7 +38,7 @@
     "postcss-assets": "4.1.0",
     "postcss-custom-media": "5.0.1",
     "postcss-custom-properties": "5.0.0",
-    "postcss-import": "8.1.2",
+    "postcss-import": "9.1.0",
     "postcss-nested": "1.0.0",
     "postcss-svg": "1.0.6",
     "postcss-svgo": "2.1.4",
