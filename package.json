@@ -37,7 +37,7 @@
     "load-grunt-config": "0.19.2",
     "postcss-assets": "4.1.0",
     "postcss-custom-media": "5.0.1",
-    "postcss-custom-properties": "5.0.0",
+    "postcss-custom-properties": "5.0.2",
     "postcss-import": "8.1.2",
     "postcss-nested": "1.0.0",
     "postcss-svg": "1.0.6",
