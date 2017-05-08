@@ -2,6 +2,7 @@
 @import 'header';
 @import 'vitae';
 @import 'footer';
+@import 'print';
 
 $color-background: #38e;
 
@@ -63,7 +64,6 @@ section:first-of-type:before {
 
 
 .image {
-  display: none;
   position: relative;
   display: block;
   width: 100%;

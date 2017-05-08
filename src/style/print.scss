@@ -1,0 +1,85 @@
+@media print {
+  body.printable {
+    background: none;
+    width: 20cm;
+    margin: 0 auto;
+
+    header, footer, section {
+      background: none;
+      color: #000;
+      margin-left: auto;
+      margin-right: auto;
+
+      svg {
+        fill: #38E;
+      }
+    }
+
+    header {
+      flex-flow: row wrap;
+      padding: 0;
+      justify-content: center;
+
+      nav {
+        margin-top: 1cm;
+        justify-content: center;
+        flex: auto;
+        flex-flow: row;
+        width: 100%;
+
+        > * {
+          height: 1cm;
+          width: 1cm;
+        }
+      }
+
+      &:after {
+        content: 'hello \0040 sebastian-misch de';
+      }
+    }
+
+    section {
+      &:first-of-type:before {
+        background-color: none;
+        border: solid 2px #ccc;
+        margin-top: 2cm;
+      }
+
+      a {
+        padding: 0;
+      }
+    }
+    .vitae {
+      li {
+        color: #000;
+        border-color: #ccc;
+
+        &:before {
+          color: #ccc;
+          background: #fff;
+          border-color: #ccc;
+        }
+      }
+    }
+
+    .company, .role {
+      background: none;
+      padding: 0;
+      font-style: italic;
+      color: #000;
+    }
+
+    .u6:before {
+      background: none;
+      color: #ccc;
+    }
+
+    .video {
+      display: none;
+    }
+
+    .image {
+      display: none;
+    }
+  }
+}
