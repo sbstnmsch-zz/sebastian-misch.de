@@ -65,8 +65,11 @@
     .company, .role {
       background: none;
       padding: 0;
-      font-style: italic;
       color: #000;
+    }
+
+    .company {
+      font-style: italic;
     }
 
     .u6:before {
