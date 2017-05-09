@@ -3,5 +3,5 @@ node_js:
   - '7'
 after_success:
   if [ "$TRAVIS_BRANCH" == "master" ] ; then
-    npm run deploy
+    npm run deploy;
   fi
