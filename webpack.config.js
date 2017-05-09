@@ -21,15 +21,22 @@ module.exports = {
     filename: '[name]-[hash].js'
   },
   module: {
-    rules: [{
-      test: /\.html$/,
-      use: ['html-loader']
-    }, {
-      test: /\.scss$/,
-      use: extractStyles.extract({
-        use: ['css-loader', 'postcss-loader', 'sass-loader']
-      })
-    }]
+    rules: [
+      {
+        test: /\.html$/,
+        use: ['html-loader']
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: extractStyles.extract({
+          use: ['css-loader', 'postcss-loader', 'sass-loader']
+        })
+      }
+    ]
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
@@ -51,6 +58,7 @@ module.exports = {
     }),
     extractStyles,
     new webpack.optimize.UglifyJsPlugin({}),
+    // new CopyWebpackPlugin([{ from: 'src/static/png', to: 'assets' }]),
     new HtmlWebpackPlugin({
       template: 'src/html/index.html',
       inject: 'body'

@@ -21,6 +21,15 @@
     font-size: 16px;
     font-weight: 400;
 
+    img {
+      position: absolute;
+      margin-top: 44px;
+      width: calc(50% - 40px);
+      filter: saturate(0);
+      opacity: .8;
+      transition: all .4s;
+    }
+
     &:nth-child(odd) {
       border-right: solid 2px rgba(255, 255, 255, .2);
       padding-left: 0;
@@ -30,6 +39,10 @@
       &:before {
         right: calc(50% - 8px);
         animation: animation--vitae-new-odd 0.5s ease-out;
+      }
+
+      img {
+        transform: translateX(calc(100% + 60px));
       }
     }
 
@@ -41,6 +54,10 @@
       &:before {
         right: calc(50% - 8px);
         animation: animation--vitae-new-even 0.5s ease-out;
+      }
+
+      img {
+        transform: translateX(calc(-1 * (100% + 60px)));
       }
     }
 
@@ -89,6 +106,11 @@
       &:before {
         transform: scale(1.4) rotate(-10deg);
       }
+
+      img {
+        filter: saturate(1);
+        opacity: .9;
+      }
     }
 
     &.vitae--header {
@@ -124,6 +146,11 @@
 
       &:before {
         margin-top: 2px;
+      }
+
+      img {
+        margin-top: 30px;
+        max-width: 180px;
       }
     }
   }
