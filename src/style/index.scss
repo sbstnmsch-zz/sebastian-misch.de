@@ -41,6 +41,58 @@ body {
         text-shadow: 0 0 1px white;
       }
     }
+
+    & > h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    & > a {
+      border: none;
+      padding: 0;
+      & > img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    p {
+      display: block;
+      max-width: $break-small - 60px;;
+      padding: 0 30px;
+      color: rgba(255, 255, 255, .7);
+
+      i {
+        color: rgba(255, 255, 255, .9);
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    ol {
+      box-sizing: border-box;
+      list-style: none;
+      padding: 30px 30px;
+      font-size: 125%;
+      text-align: center;
+      max-width: $break-small;
+      background-color: rgba(255, 255, 255, .2);
+
+      & > li {
+        display: inline;
+        &:after {
+          content: ', ';
+        }
+        &:last-child:after {
+          content: '';
+        }
+        &:nth-last-child(2):after {
+          content: ' & ';
+        }
+      }
+    }
   }
 }
 
@@ -57,7 +109,6 @@ section:first-of-type:before {
   text-align: center;
   margin: 0 calc(50% - 30px);
 }
-
 
 .image {
   position: relative;
@@ -80,6 +131,12 @@ section:first-of-type:before {
     font-size: 12px;
   }
 
+  &__joplifter {
+    background-image: url(//github.com/sbstnmsch/c64-choplifter-clone/raw/master/doc/joplifter.gif);
+    &:after {
+      content: 'Fun @ 25 years after clone of C64 Choplifter written in Java AWT @ GitHub';
+    }
+  }
   &__berlin {
     background-image: url(//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg/800px-Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg);
     &:after {
