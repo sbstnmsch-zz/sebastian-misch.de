@@ -61,7 +61,12 @@ body {
       max-width: $break-small - 60px;;
       padding: 0 30px;
       color: rgba(255, 255, 255, .7);
-      font-size: 14px;
+
+      @media screen and (max-width: $break-small) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
       i {
         color: rgba(255, 255, 255, .9);
 
@@ -134,7 +139,7 @@ section:first-of-type:before {
   &__joplifter {
     background-image: url(//github.com/sbstnmsch/c64-choplifter-clone/raw/master/doc/joplifter.gif);
     &:after {
-      content: 'Fun @ 25 years after clone of C64 Choplifter written in Java AWT @ GitHub';
+      content: 'Fun: 25 years after C64 Choplifter clone written in Java @ GitHub';
     }
   }
   &__berlin {
