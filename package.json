@@ -7,8 +7,14 @@
     "postinstall": "npm run build",
     "build": "(test -d dist && rm -r dist); webpack -p",
     "test": "eslint .",
-    "deploy": "(echo \"google-site-verification: google${GOOGLE_SITE_VERIFICATION}.html\" > dist/google\"${GOOGLE_SITE_VERIFICATION}\".html); cp src/static/* dist/; sftp-deploy",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy":
+      "npm test && npm run deploy:prepare && npm run deploy:verification && npm run deploy:sync",
+    "deploy:prepare": "cp -r src/static/* dist/",
+    "deploy:verification":
+      "echo \"google-site-verification: google${GOOGLE_SITE_VERIFICATION}.html\" > dist/google\"${GOOGLE_SITE_VERIFICATION}\".html",
+    "deploy:sync":
+      "rsync -az --exclude '.git*' --exclude '.next' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./dist/ sebastian-misch.de:~sebastian-misch-de/htdocs/"
   },
   "repository": {
     "type": "git",
