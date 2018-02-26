@@ -1,6 +1,8 @@
 [![Build Status](https://api.travis-ci.org/sbstnmsch/sebastian-misch.de.svg?branch=master)](https://travis-ci.org/sbstnmsch/sebastian-misch.de)
 
 # My personal website
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sbstnmsch/sebastian-misch.de.svg)](https://greenkeeper.io/)
 live at https://sebastian-misch.de - feel free to use for your own.
 
 ## Install
