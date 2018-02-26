@@ -1,26 +1,26 @@
-const
-  _postcssCustomPropertiesProcessor = require('postcss-custom-properties')(),
-  _postcssCustomMediaProcessor = require('postcss-custom-media')(),
-  _postcssImportProcessor = require('postcss-import')(),
-  _postcssAssetsProcessor = require('postcss-assets')({
-    loadPaths: ['src/']
+/* eslint-disable */
+const _postcssCustomPropertiesProcessor = require("postcss-custom-properties")(),
+  _postcssCustomMediaProcessor = require("postcss-custom-media")(),
+  _postcssImportProcessor = require("postcss-import")(),
+  _postcssAssetsProcessor = require("postcss-assets")({
+    loadPaths: ["src/"]
   }),
-  _postcssNestedProcessor = require('postcss-nested')(),
-  _postcssSvgProcessor = require('postcss-svg')({
-    ei: { defaults: '[fill]: white' }
+  _postcssNestedProcessor = require("postcss-nested")(),
+  _postcssSvgProcessor = require("postcss-svg")({
+    ei: { defaults: "[fill]: white" }
   }),
-  _postcssSvgoProcessor = require('postcss-svgo')(),
-  _autoprefixerProcessor = require('autoprefixer')({
+  _postcssSvgoProcessor = require("postcss-svgo")(),
+  _autoprefixerProcessor = require("autoprefixer")({
     browsers: [
-      'last 3 Android versions',
-      'last 4 iOS versions',
-      'last 5 Chrome versions',
-      'last 8 ChromeAndroid versions',
-      'last 4 ExplorerMobile versions',
-      'last 5 FirefoxAndroid versions'
+      "last 3 Android versions",
+      "last 4 iOS versions",
+      "last 5 Chrome versions",
+      "last 8 ChromeAndroid versions",
+      "last 4 ExplorerMobile versions",
+      "last 5 FirefoxAndroid versions"
     ]
   }),
-  _cssNanoProcessor = require('cssnano')(),
+  _cssNanoProcessor = require("cssnano")(),
   _processors = [
     _postcssImportProcessor,
     _postcssNestedProcessor,
@@ -40,8 +40,8 @@ module.exports = {
       processors: _processors
     },
     files: {
-      '<%= paths.dist.stylesheets %>/critical.min.css':
-        '<%= paths.src.stylesheets %>/critical.css'
+      "<%= paths.dist.stylesheets %>/critical.min.css":
+        "<%= paths.src.stylesheets %>/critical.css"
     }
   },
   app: {
@@ -50,8 +50,8 @@ module.exports = {
       processors: _processors
     },
     files: {
-      '<%= paths.dist.stylesheets %>/app.min.css':
-        '<%= paths.src.stylesheets %>/app.css'
+      "<%= paths.dist.stylesheets %>/app.min.css":
+        "<%= paths.src.stylesheets %>/app.css"
     }
   },
   media: {
@@ -60,8 +60,9 @@ module.exports = {
       processors: _processors
     },
     files: {
-      '<%= paths.dist.stylesheets %>/media.min.css':
-        '<%= paths.src.stylesheets %>/media.css'
+      "<%= paths.dist.stylesheets %>/media.min.css":
+        "<%= paths.src.stylesheets %>/media.css"
     }
   }
 };
+/* eslint-enable */
