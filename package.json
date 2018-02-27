@@ -8,13 +8,8 @@
     "build": "(test -d dist && rm -r dist); webpack -p",
     "test": "eslint .",
     "start": "webpack-dev-server",
-    "deploy":
-      "npm test && npm run deploy:prepare && npm run deploy:verification && npm run deploy:sync",
-    "deploy:prepare": "cp -r src/static/* dist/",
-    "deploy:verification":
-      "echo \"google-site-verification: google${GOOGLE_SITE_VERIFICATION}.html\" > dist/google\"${GOOGLE_SITE_VERIFICATION}\".html",
-    "deploy:sync":
-      "rsync -az --exclude '.git*' --exclude '.next' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./dist/ sebastian-misch.de:~sebastian-misch-de/htdocs/"
+    "deploy": "npm test && npm run deploy:sync",
+    "deploy:sync": "rsync -az --exclude '.git*' --exclude '.next' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./dist/ sebastian-misch.de:~sebastian-misch-de/htdocs/"
   },
   "repository": {
     "type": "git",
@@ -38,6 +33,7 @@
     "file-loader": "^1.1.9",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "github:webpack-contrib/html-webpack-plugin",
+    "image-webpack-loader": "^4.1.0",
     "node-sass": "^4.5.2",
     "postcss-loader": "^2.1.1",
     "sass-loader": "^6.0.3",

@@ -1,5 +1,4 @@
 const path = require('path');
-// const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -28,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png)$/,
-        use: ['file-loader']
+        use: ['file-loader', 'image-webpack-loader']
       },
       {
         test: /\.scss$/,
@@ -66,7 +65,8 @@ module.exports = {
     extractStyles,
     new HtmlWebpackPlugin({
       template: 'src/html/index.html',
-      inject: 'body'
+      inject: 'body',
+      googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION
     })
   ]
 };
