@@ -22,11 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: ['html-loader']
-      },
-      {
-        test: /\.(jpg|png)$/,
+        test: /\.(ico|jpg|png)$/,
         use: ['file-loader', 'image-webpack-loader']
       },
       {
@@ -66,7 +62,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/html/index.html',
       inject: 'body',
-      googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION
+      googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      }
     })
   ]
 };

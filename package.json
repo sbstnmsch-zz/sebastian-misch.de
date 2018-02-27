@@ -9,7 +9,8 @@
     "test": "eslint .",
     "start": "webpack-dev-server",
     "deploy": "npm test && npm run deploy:sync",
-    "deploy:sync": "rsync -az --exclude '.git*' --exclude '.next' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./dist/ sebastian-misch.de:~sebastian-misch-de/htdocs/"
+    "deploy:sync":
+      "rsync -az --exclude '.git*' --exclude '.next' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./dist/ sebastian-misch.de:~sebastian-misch-de/htdocs/"
   },
   "repository": {
     "type": "git",

@@ -10,7 +10,7 @@
   <meta name="google-site-verification" content="<%= htmlWebpackPlugin.options.googleSiteVerification %>">
   <title>
     Sebastian Misch — Freelance IT-Consultant &amp; Frontend-Engineer | Berlin</title>
-  <link rel="shortcut icon" href="../static/favicon.ico">
+  <link rel="shortcut icon" href="<%= require('../static/favicon.ico') %>">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
@@ -50,7 +50,7 @@
           <h2>Current challenges</h2>
         </li>
         <li data-after="since 2016">
-          <img src="../static/img/uhrwerk.berlin.png" title="Uhrwerk Berlin Watches" />
+          <img src="<%= require('../static/img/uhrwerk.berlin.png') %>" title="Uhrwerk Berlin Watches" />
           <span class="role">Representative Managing Director</span>
           <span class="company company__registered">Uhrwerk Berlin</span>
           We created a timekeeper of Berlin's vibes, people and attitude. Berlin - my home - a melting pot of fashion, art, politics
@@ -67,7 +67,7 @@
           Jest, Sass &amp; Webpack
         </li>
         <li data-after="since 2014" class="padding-bottom">
-          <img src="../static/img/conference.jpg" title="dot.JS/ CSS Conference @ Paris" />
+          <img src="<%= require('../static/img/conference.jpg') %>" title="dot.JS/ CSS Conference @ Paris" />
           <span class="role">Founder</span>
           <span class="company">Nerds of all Trades GmbH</span>
           A Berlin-based community building software and consulting IT-projects with focus on E-Commerce
@@ -89,7 +89,8 @@
           Scrum-Master-style. Inter-team management for product evolution and legacy migration
         </li>
         <li data-after="2012 - 2015">
-          <img src="../static/img/nip.to.png" title="nip.to someone with your smartphone" style="margin-top: -1.2em" />
+          <img src="<%= require('../static/img/nip.to.png') %>" title="nip.to someone with your smartphone" style="margin-top: -1.2em"
+          />
           <span class="role">Founder</span>
           <span class="company company__registered">nip.to</span>
           is a free service to share your current location with friends. Use nip.to with your smartphone or tablet computer. Get your
