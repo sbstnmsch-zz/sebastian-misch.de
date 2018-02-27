@@ -22,6 +22,9 @@
   },
   "author": "Sebastian Misch",
   "license": "MIT",
+  "prettier": {
+    "singleQuote": true
+  },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "babel-eslint": "^8.2.2",

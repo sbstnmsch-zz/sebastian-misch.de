@@ -1,10 +1,10 @@
-const path = require("path");
-const webpack = require("webpack");
-const autoprefixer = require("autoprefixer");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+// const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const extractStyles = new ExtractTextPlugin("[name]-[hash].css");
+const extractStyles = new ExtractTextPlugin('[name]-[hash].css');
 
 module.exports = {
   stats: {
@@ -14,48 +14,48 @@ module.exports = {
     version: false
   },
   entry: {
-    app: "./src/app/index.js"
+    app: './src/app/index.js'
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name]-[hash].js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name]-[hash].js'
   },
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: ["html-loader"]
+        use: ['html-loader']
       },
       {
         test: /\.(jpg|png)$/,
-        use: ["file-loader"]
+        use: ['file-loader']
       },
       {
         test: /\.scss$/,
         use: extractStyles.extract({
           use: [
             {
-              loader: "css-loader"
+              loader: 'css-loader'
             },
             {
-              loader: "postcss-loader",
+              loader: 'postcss-loader',
               options: {
                 plugins: () => [
                   autoprefixer({
                     browsers: [
-                      "last 3 Android versions",
-                      "last 4 iOS versions",
-                      "last 5 Chrome versions",
-                      "last 8 ChromeAndroid versions",
-                      "last 4 ExplorerMobile versions",
-                      "last 5 FirefoxAndroid versions"
+                      'last 3 Android versions',
+                      'last 4 iOS versions',
+                      'last 5 Chrome versions',
+                      'last 8 ChromeAndroid versions',
+                      'last 4 ExplorerMobile versions',
+                      'last 5 FirefoxAndroid versions'
                     ]
                   })
                 ]
               }
             },
             {
-              loader: "sass-loader"
+              loader: 'sass-loader'
             }
           ]
         })
@@ -65,8 +65,8 @@ module.exports = {
   plugins: [
     extractStyles,
     new HtmlWebpackPlugin({
-      template: "src/html/index.html",
-      inject: "body"
+      template: 'src/html/index.html',
+      inject: 'body'
     })
   ]
 };
