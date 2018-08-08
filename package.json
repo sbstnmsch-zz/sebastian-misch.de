@@ -36,7 +36,7 @@
     "html-webpack-plugin": "github:webpack-contrib/html-webpack-plugin",
     "image-webpack-loader": "^4.1.0",
     "node-sass": "^4.5.2",
-    "postcss-loader": "^2.1.1",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^6.0.3",
     "sftp-deploy": "^0.1.0",
     "style-loader": "^0.20.2",
